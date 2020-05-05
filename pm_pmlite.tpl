@@ -12,11 +12,11 @@
         <tr>
             <td class='head width30 txtright'><{$smarty.const._PM_SUBJECT_ICONS}></td>
             <td class='even txtleft'>
-
-                <{foreachq item=icon from=$radio_icons}>
-                <input type='radio' name='icon' id='<{$icon}>' value='<{$icon}>'/><label name='xolb_icon' for='<{$icon}>'><img
-                            src='<{xoAppUrl}>images/subject/<{$icon}>' alt=""/></label>
-                <{/foreach}>  </td>
+				<{foreachq item=icon from=$radio_icons}>
+					<input type='radio' name='icon' id='<{$icon}>' value='<{$icon}>'/>
+					<label name='xolb_icon' for='<{$icon}>'><img src='<{xoAppUrl}>images/subject/<{$icon}>' alt=""/></label>
+                <{/foreach}>
+			</td>
         </tr>
         <tr class='aligntop'>
             <td class='head width30 txtright'><{$smarty.const._PM_MESSAGEC}></td>

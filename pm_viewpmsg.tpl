@@ -101,7 +101,7 @@
 													echo $posterObj->getVar('user_avatar');
 												}
 											<{/php}>"
-										class="" height="48px">
+										class="rounded-circle" height="48px">
 										<br />
 										<{$message.postername}>
 									</a>
