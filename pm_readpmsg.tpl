@@ -39,10 +39,12 @@
 				<div class="col-md-4 text-center">
 					<{if $op=='out'}><b><{$smarty.const._PM_TO}></b><br> <{else}><b><{$smarty.const._PM_FROM}></b><br> <{/if}>
 					<{if ( $poster != false ) }>
-						<a href="<{$xoops_url}>/userinfo.php?uid=<{$poster->getVar('uid')}>"><{$poster->getVar('uname')}></a><br>
-						<{if ( $poster->getVar("user_avatar") != "")}>
-							<img src="<{$xoops_url}>/uploads/<{$poster->getVar('user_avatar')}>" alt="<{$poster->getVar('uname')}>" class="img-fluid rounded-circle img-thumbnail">
-						<{/if}>
+						<a href="<{$xoops_url}>/userinfo.php?uid=<{$poster->getVar('uid')}>">
+							<h5><{$poster->getVar('uname')}></h5>
+							<{if ( $poster->getVar("user_avatar") != "")}>
+								<img src="<{$xoops_url}>/uploads/<{$poster->getVar('user_avatar')}>" alt="<{$poster->getVar('uname')}>" class="img-fluid rounded-circle img-thumbnail">
+							<{/if}>
+						</a>
 						<{if ( $poster->getVar("user_from") != "" ) }>
 							<{$smarty.const._PM_FROMC}><{$poster->getVar("user_from")}>
 						<{/if}>

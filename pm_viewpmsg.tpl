@@ -93,15 +93,18 @@
 							<td class='text-center'>
 								<{if $message.postername != ""}>
 									<{assign var="tempPosteruid" value=$message.posteruid}>
-									<img src="<{$xoops_url}>/uploads/
-										<{php}>
-											$user_handler = xoops_getHandler('user');
-											if($posterObj = $user_handler->get($this->get_template_vars('tempPosteruid'))) {
-												echo $posterObj->getVar('user_avatar');
-											}
-										<{/php}>"
+									<a href='<{$xoops_url}>/userinfo.php?uid=<{$message.posteruid}>' alt="<{$message.postername}>" title='<{$message.postername}>'>
+										<img src="<{$xoops_url}>/uploads/
+											<{php}>
+												$user_handler = xoops_getHandler('user');
+												if($posterObj = $user_handler->get($this->get_template_vars('tempPosteruid'))) {
+													echo $posterObj->getVar('user_avatar');
+												}
+											<{/php}>"
 										class="" height="48px">
-										<br /><a href='<{$xoops_url}>/userinfo.php?uid=<{$message.posteruid}>' title=''><{$message.postername}></a>
+										<br />
+										<{$message.postername}>
+									</a>
 								<{else}>
 									<{$anonymous}>
 								<{/if}>
