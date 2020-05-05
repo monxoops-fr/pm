@@ -29,17 +29,17 @@
 		<div class="row mb-3">
 			<div class="col-12 btn-group" role="group" aria-label="Basic example">
 				<{if $op == "in" || (!($op == out) && !($op == save))}>
-					<a class="btn btn-primary" href="viewpmsg.php?op=in" title="<{$smarty.const._PM_INBOX}>"><span class="fa fa-inbox fa-lg fa-fw"></span><br /><{$smarty.const._PM_INBOX}></a>
-					<a class="btn btn-secondary" href="viewpmsg.php?op=out" title="<{$smarty.const._PM_OUTBOX}>"><span class="fa fa-paper-plane fa-lg fa-fw"></span><br /><{$smarty.const._PM_OUTBOX}></a>
-					<a class="btn btn-secondary" href="viewpmsg.php?op=save" title="<{$smarty.const._PM_SAVEBOX}>"><span class="fa fa-archive fa-lg fa-fw"></span><br /><{$smarty.const._PM_SAVEBOX}></a>
+					<a class="btn btn-primary" href="viewpmsg.php?op=in" title="<{$smarty.const._PM_INBOX}>"><span class="fa fa-inbox fa-2x fa-fw"></span><br /><{$smarty.const._PM_INBOX}></a>
+					<a class="btn btn-secondary" href="viewpmsg.php?op=out" title="<{$smarty.const._PM_OUTBOX}>"><span class="fa fa-paper-plane fa-2x fa-fw"></span><br /><{$smarty.const._PM_OUTBOX}></a>
+					<a class="btn btn-secondary" href="viewpmsg.php?op=save" title="<{$smarty.const._PM_SAVEBOX}>"><span class="fa fa-archive fa-2x fa-fw"></span><br /><{$smarty.const._PM_SAVEBOX}></a>
 				<{elseif $op == "out"}>
-					<a class="btn btn-secondary" href="viewpmsg.php?op=in" title="<{$smarty.const._PM_INBOX}>"><span class="fa fa-inbox fa-lg fa-fw"></span><br /><{$smarty.const._PM_INBOX}></a>
-					<a class="btn btn-primary" href="viewpmsg.php?op=out" title="<{$smarty.const._PM_OUTBOX}>"><span class="fa fa-paper-plane fa-lg fa-fw"></span><br /><{$smarty.const._PM_OUTBOX}></a>
-					<a class="btn btn-secondary" href="viewpmsg.php?op=save" title="<{$smarty.const._PM_SAVEBOX}>"><span class="fa fa-archive fa-lg fa-fw"></span><br /><{$smarty.const._PM_SAVEBOX}></a>
+					<a class="btn btn-secondary" href="viewpmsg.php?op=in" title="<{$smarty.const._PM_INBOX}>"><span class="fa fa-inbox fa-2x fa-fw"></span><br /><{$smarty.const._PM_INBOX}></a>
+					<a class="btn btn-primary" href="viewpmsg.php?op=out" title="<{$smarty.const._PM_OUTBOX}>"><span class="fa fa-paper-plane fa-2x fa-fw"></span><br /><{$smarty.const._PM_OUTBOX}></a>
+					<a class="btn btn-secondary" href="viewpmsg.php?op=save" title="<{$smarty.const._PM_SAVEBOX}>"><span class="fa fa-archive fa-2x fa-fw"></span><br /><{$smarty.const._PM_SAVEBOX}></a>
 				<{elseif $op == "save"}>
-					<a class="btn btn-secondary" href="viewpmsg.php?op=in" title="<{$smarty.const._PM_INBOX}>"><span class="fa fa-inbox fa-lg fa-fw"></span><br /><{$smarty.const._PM_INBOX}></a>
-					<a class="btn btn-secondary" href="viewpmsg.php?op=out" title="<{$smarty.const._PM_OUTBOX}>"><span class="fa fa-paper-plane fa-lg fa-fw"></span><br /><{$smarty.const._PM_OUTBOX}></a>
-					<a class="btn btn-primary" href="viewpmsg.php?op=save" title="<{$smarty.const._PM_SAVEBOX}>"><span class="fa fa-archive fa-lg fa-fw"></span><br /><{$smarty.const._PM_SAVEBOX}></a>
+					<a class="btn btn-secondary" href="viewpmsg.php?op=in" title="<{$smarty.const._PM_INBOX}>"><span class="fa fa-inbox fa-2x fa-fw"></span><br /><{$smarty.const._PM_INBOX}></a>
+					<a class="btn btn-secondary" href="viewpmsg.php?op=out" title="<{$smarty.const._PM_OUTBOX}>"><span class="fa fa-paper-plane fa-2x fa-fw"></span><br /><{$smarty.const._PM_OUTBOX}></a>
+					<a class="btn btn-primary" href="viewpmsg.php?op=save" title="<{$smarty.const._PM_SAVEBOX}>"><span class="fa fa-archive fa-2x fa-fw"></span><br /><{$smarty.const._PM_SAVEBOX}></a>
 				<{/if}>
 			</div>	
 		</div>
@@ -76,17 +76,17 @@
 								<input type='checkbox' id='msg_id_<{$message.msg_id}>' name='msg_id[]' value='<{$message.msg_id}>' />
 								<br />
 								<{if $message.read_msg == 1}>
-									<span class="fa fa-envelope-open fa-lg text-secondary"></span>
+									<span class="fa fa-envelope-open fa-2x text-secondary"></span>
 								<{else}>
-									<span class="fa fa-envelope fa-lg text-primary"></span>
+									<span class="fa fa-envelope fa-2x text-primary"></span>
 								<{/if}>
 							</td>
 							
 							<td class="d-none d-sm-table-cell">
 								<{if $message.read_msg == 1}>
-									<span class="fa fa-envelope-open fa-lg text-secondary"></span>
+									<span class="fa fa-envelope-open fa-2x text-secondary"></span>
 								<{else}>
-									<span class="fa fa-envelope fa-lg text-primary"></span>
+									<span class="fa fa-envelope fa-2x text-primary"></span>
 								<{/if}>
 							</td>
 							
