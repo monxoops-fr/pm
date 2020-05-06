@@ -47,9 +47,9 @@
 			<div class="col-12">
 				<table class="table table-hover" cellspacing='1' cellpadding='4'>
 					<!-- Table - Head --> 
-					<tr class="">
+					<tr class="table-secondary">
 						<th class="text-center"><input name='allbox' id='allbox' onclick='xoopsCheckAll("<{$pmform.name}>", "allbox");' type='checkbox' value='Check All' title="<{$smarty.const.THEME_SELECT_ALL}>"/></th>
-						<th class="d-none d-sm-table-cell"></th>
+						<th class="text-center d-none d-sm-table-cell"><span class="fa fa-envelope text-primary"></span> <span class="fa fa-envelope-open text-secondary"></span></th>
 						<{if $op == "out"}>
 							<th class="text-center"><{$smarty.const._PM_TO}></th>
 						<{else}>
@@ -82,7 +82,7 @@
 								<{/if}>
 							</td>
 							
-							<td class="d-none d-sm-table-cell">
+							<td class="text-center d-none d-sm-table-cell">
 								<{if $message.read_msg == 1}>
 									<span class="fa fa-envelope-open fa-2x text-secondary"></span>
 								<{else}>
